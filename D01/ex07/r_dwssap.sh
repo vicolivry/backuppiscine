@@ -1,1 +1,1 @@
-cat /etc/passwd | grep -v ^\# | grep . | sed -n 'n;p' | cut -d ':' -f1 | rev | sort -r | grep "$FT_LINE1" | grep "$FT_LINE2" | tr "\n" ", " | rev | sed s/,/./1 | cut -c2- | rev | tr -d "\n" | sed 's/,,$/ /'
+cat /etc/passwd | grep -v ^\# | grep . | sed -n 'n;p' | cut -d ':' -f1 | rev | sort -r | grep "$FT_LINE1" | grep "$FT_LINE2" | tr "\n" ", " | rev | sed s/,/./1 | cut -c2- | rev | tr -d "\n" | sed 's/,,$/ /' | sed 's/,/, /g'
