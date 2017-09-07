@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/07 15:48:10 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/07 20:02:27 by volivry          ###   ########.fr       */
+/*   Created: 2017/09/07 17:12:57 by volivry           #+#    #+#             */
+/*   Updated: 2017/09/07 20:22:25 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,15 @@ void ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void ft_print_reverse_alphabet(void)
+void ft_is_negative(int n)
 {
-	int i;
-	
-	i = 0;
-	while(i < 26)
+	if(n < 0)
 	{
-		ft_putchar('z' - i);
-		i++;
+		ft_putchar('N');
+	}
+
+	else
+	{
+		ft_putchar('P');
 	}
 }
