@@ -6,11 +6,11 @@
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/08 19:58:31 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/08 20:03:54 by volivry          ###   ########.fr       */
+/*   Updated: 2017/09/09 16:29:35 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_div_mod(int *a, int *b)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int div;
 	int mod;

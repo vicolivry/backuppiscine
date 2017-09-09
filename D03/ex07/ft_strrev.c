@@ -1,16 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/08 19:36:05 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/09 16:22:36 by volivry          ###   ########.fr       */
+/*   Created: 2017/09/09 12:25:06 by volivry           #+#    #+#             */
+/*   Updated: 2017/09/09 16:48:58 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate(int *********nbr)
+int	ft_strlen(char *str)
 {
-	**********nbr = 42;
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+char	*ft_strrev(char *str)
+{
+	int	x;
+	int	y;
+	char	tmp;
+
+	x = 0;
+	y = ft_strlen(str) - 1;
+	tmp = 0;
+
+	while (x <= y)
+	{
+		tmp = str[y];
+		str[y] = str[x];
+		str[x] = tmp;
+		x++;
+		y--;
+	}
+	y = ft_strlen(str);
+	str[y] = '\0';
+	return (str);
 }

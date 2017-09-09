@@ -6,11 +6,11 @@
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/08 19:42:28 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/08 19:44:57 by volivry          ###   ########.fr       */
+/*   Updated: 2017/09/09 16:24:02 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b);
+void	ft_swap(int *a, int *b);
 {
 	int x;
 
