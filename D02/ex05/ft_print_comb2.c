@@ -6,18 +6,33 @@
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/08 08:55:14 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/08 10:47:05 by volivry          ###   ########.fr       */
+/*   Updated: 2017/09/09 15:56:46 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
-void ft_putchar(char c)
+void	ft_print_result(i, j, y, z)
 {
-	write(1, &c, 1);
+	if (i + j < y + z)
+	{
+		if (y >= i && z > j)
+		{
+			ft_putchar('0' + i);
+			ft_putchar('0' + j);
+			ft_putchar(' ');
+			ft_putchar('0' + y);
+			ft_putchar('0' + z);
+			if (i != 9 || j != 8)
+			{
+				ft_putchar(',');
+				ft_putchar(' ');
+			}
+		}
+	}
 }
 
-void ft_print_comb2(void)
+void	ft_print_comb2(void)
 {
 	int i;
 	int j;
@@ -36,29 +51,7 @@ void ft_print_comb2(void)
 			{
 				while(z <= 9)
 				{
-					if(i + j < y + z)
-					{
-						if(y >= i && z > j)
-						{
-							ft_putchar('0' + i);
-							ft_putchar('0' + j);
-							ft_putchar(' ');
-						}
-					}
-					if(i + j < y + z)
-					{
-						if(y >= i && z > j)
-						{
-							ft_putchar('0' + y);
-							ft_putchar('0' + z);
-						
-						if(i != 9 ||  j != 8)
-						{
-							ft_putchar(',');
-							ft_putchar(' ');
-						}
-						}
-					}
+					ft_print_result(i, j, y, z);
 					z++;
 				}
 				z = 0;
@@ -70,10 +63,4 @@ void ft_print_comb2(void)
 		j = 0;
 		i++;	
 	}
-}
-
-int main()
-{
-	ft_print_comb2();
-	return(0);
 }

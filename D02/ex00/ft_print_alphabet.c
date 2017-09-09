@@ -6,22 +6,22 @@
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/07 14:59:12 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/07 16:14:55 by volivry          ###   ########.fr       */
+/*   Updated: 2017/09/09 14:45:32 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-	write (1, &c, 1);
+	write(1, &c, 1);
 }
 
-void ft_print_alphabet(void)
+void	ft_print_alphabet(void)
 {
-	char a;
-	int i;
-		
+	char	a;
+	int		i;
+
 	i = 0;
 	while (i < 26)
 	{
@@ -29,4 +29,3 @@ void ft_print_alphabet(void)
 		i++;
 	}
 }
-

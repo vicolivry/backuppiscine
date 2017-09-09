@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/07 16:27:06 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/09 14:50:33 by volivry          ###   ########.fr       */
+/*   Created: 2017/09/08 11:17:09 by volivry           #+#    #+#             */
+/*   Updated: 2017/09/09 16:08:57 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
-void	ft_putchar(char c)
+void	ft_putnbr(int nb)
 {
-	write(1, &c, 1);
-}
-
-void	ft_print_numbers(void)
-{
-	int	i;
-
-	i = 0;
-	while (i < 10)
+	if (nb < 0)
 	{
-		ft_putchar('0' + i);
-		i++;
+		ft_putchar('-');
+		nb = -nb;
 	}
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+		nb %= 10;
+	}
+	ft_putchar('0' + nb);
 }
