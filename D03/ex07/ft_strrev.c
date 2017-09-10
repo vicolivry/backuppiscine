@@ -6,13 +6,13 @@
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/09 12:25:06 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/09 16:48:58 by volivry          ###   ########.fr       */
+/*   Updated: 2017/09/10 16:21:06 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int		ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -24,14 +24,13 @@ int	ft_strlen(char *str)
 
 char	*ft_strrev(char *str)
 {
-	int	x;
-	int	y;
+	int		x;
+	int		y;
 	char	tmp;
 
 	x = 0;
 	y = ft_strlen(str) - 1;
 	tmp = 0;
-
 	while (x <= y)
 	{
 		tmp = str[y];
