@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/10 20:38:07 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/11 15:21:29 by volivry          ###   ########.fr       */
+/*   Created: 2017/09/11 15:49:37 by volivry           #+#    #+#             */
+/*   Updated: 2017/09/11 17:15:01 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb)
+int	ft_fibonacci(int index)
 {
-	if ( nb > 12)
+	if (index < 0)
+		return (-1);
+	if (index == 0)
 		return (0);
-	if (nb == 0 || nb == 1)
+	if (index == 1)
 		return (1);
-		if (nb > 1)
-		{
-			return (nb * ft_recursive_factorial(nb -1));
-		}
-		return (nb);
+	return ( ft_fibonacci(index - 2) + ft_fibonacci(index - 1));
 }
