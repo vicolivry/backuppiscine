@@ -3,17 +3,14 @@
 char *strcpy(char *dest, char *src)
 {
 	int	i;
-	it	j;
 
 	i = 0; 
-	j = 0;
 	while (str[i] != '\0')
 	{
-		dest[j] = src[i];
+		dest[i] = src[i];
 		i++;
-		j++;
 	}
-	dest[j + 1] = '\0';
+	dest[i + 1] = '\0';
 	return (dest);
 }
 

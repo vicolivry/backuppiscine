@@ -3,18 +3,15 @@
 char *strncpy(char *dest, char *src, unsigned int n)
 {
 	int	i;
-	int 	i_src;
-	int 	i_dest;
+	int 	index;
 
 	i = 0; 
-	i_src = 0;
-	i_dest = 0;
+	index = 0;
 	while (i < n)
 	{
-		dest[i_src] = src[i_src];
+		dest[index] = src[index];
 		i++;
-		i_src++;
-		i_dest++;
+		index++;
 	}
 	return dest;
 }
