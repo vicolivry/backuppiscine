@@ -6,11 +6,11 @@
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/08 19:47:47 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/09 16:24:59 by volivry          ###   ########.fr       */
+/*   Updated: 2017/09/12 09:44:37 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod);
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
 	*mod = a % b;
