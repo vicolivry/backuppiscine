@@ -6,13 +6,13 @@
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/08 08:55:14 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/09 15:56:46 by volivry          ###   ########.fr       */
+/*   Updated: 2017/09/12 09:13:47 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_print_result(i, j, y, z)
+void	ft_print_result(int i, int j, int y, int z)
 {
 	if (i + j < y + z)
 	{
@@ -43,13 +43,13 @@ void	ft_print_comb2(void)
 	j = 0;
 	y = 0;
 	z = 1;
-	while(i <= 9)
+	while (i <= 9)
 	{
-		while(j <= 9)
+		while (j <= 9)
 		{
-			while(y <= 9)
+			while (y <= 9)
 			{
-				while(z <= 9)
+				while (z <= 9)
 				{
 					ft_print_result(i, j, y, z);
 					z++;

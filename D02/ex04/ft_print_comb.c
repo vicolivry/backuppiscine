@@ -6,18 +6,13 @@
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/09 15:15:53 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/09 15:33:03 by volivry          ###   ########.fr       */
+/*   Updated: 2017/09/12 09:14:25 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	ft_print_result(i, j, k)
+void	ft_print_result(int i, int j, int k)
 {
 	if (i < j && j < k)
 	{
@@ -34,9 +29,9 @@ void	ft_print_result(i, j, k)
 
 void	ft_print_comb(void)
 {
-	int i;
-	int j;
-	int k;
+	int	i;
+	int	j;
+	int	k;
 
 	i = 0;
 	j = 0;

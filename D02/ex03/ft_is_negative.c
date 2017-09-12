@@ -5,18 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: volivry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/07 17:12:57 by volivry           #+#    #+#             */
-/*   Updated: 2017/09/09 14:55:36 by volivry          ###   ########.fr       */
+/*   Created: 2017/09/12 09:08:11 by volivry           #+#    #+#             */
+/*   Updated: 2017/09/12 09:10:03 by volivry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
-	i (n < 0)
+	if (n < 0)
 	{
 		ft_putchar('N');
 	}
